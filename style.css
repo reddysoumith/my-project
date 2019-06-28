@@ -1,106 +1,30 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+.wrapper {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  /*grid-auto-rows: 100px;*/
+  grid-auto-rows: minmax(100px, auto);
+}
+.nested {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 70px;
+  grid-gap: 1em;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 1em;
+  justify-items: stretch;
+  align-items: flex-end;
 }
-button {
-  font-family: "Poppins", sans-serif;
+.wrapper > div:nth-child(odd) {
+  background: #ddd;
 }
-header {
-  display: flex;
-  width: 90%;
-  height: 10vh;
-  margin: auto;
-  align-items: center;
-}
-.logo-container,
-.nav-links,
-.cart {
-  display: flex;
-}
-.logo-container {
-  flex: 1;
-}
-.logo {
-  font-weight: 400;
-  margin: 5px;
-}
-nav {
-  flex: 2;
-}
-.nav-links {
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-link {
-  color: #5f5f79;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.cart {
-  flex: 1;
-  justify-content: flex-end;
-}
-
-.presentation {
-  display: flex;
-  width: 90%;
-  margin: auto;
-  min-height: 80vh;
-  align-items: center;
-}
-.introduction {
-  flex: 1;
-}
-.cover {
-  flex: 1;
-}
-.intro-text h1 {
-  font-size: 40px;
-  font-weight: 500px;
-  background: linear-gradient(to right, #494964, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.intro-text {
-  margin-top: 5px;
-  font-size: 22px;
-  color: #587758;
-}
-.cta {
-  padding: 50px;
-}
-.cta-select {
-  border: 2px solid lightseagreen;
-  background: transparent;
-  color: #5f5f79;
-  width: 150px;
-  height: 47px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.cta-add {
-  background: lightsalmon;
-  width: 150px;
-  height: 47px;
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
-  color: wheat;
-  margin: 30px 0px 0px 0px;
-}
-.cover img {
-  height: 60vh;
-  width: 75vh;
-  position: relative;
-  left: 20px;
-  top: 90px;
-  box-shadow: 3px 3px black;
+.nested > div {
+  border: #333 1px solid;
+  padding: 1em;
 }
