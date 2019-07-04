@@ -1,62 +1,104 @@
-body {
-  padding: 0px 25px 50px 25px;
-}
-h1 {
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-p1.a {
+.c1 {
   position: relative;
+  left: 500px;
+  background-color: rgb(250, 248, 248);
+  width: 350px;
+  border: 1px solid black;
+  height: 800px;
+  margin: 20px;
+}
+.container > img {
+  position: relative;
+  top: 10px;
+  left: 115px;
+  border-radius: 60%;
+  width: 100px;
+  border-width: 2px;
+  border-style: ridge;
+}
+h3 {
+  position: relative;
+  left: 110px;
+  font-family: "Muli", sans-serif;
+}
+.p1 {
+  position: relative;
+  left: 60px;
+  opacity: 0.5;
+  font-family: "Poppins", sans-serif;
+}
+.p2 {
+  position: relative;
+  left: 135px;
+  opacity: 0.5;
+  bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.p3 {
+  position: relative;
+  left: 60px;
+  font-size: 20px;
+}
+.p4 {
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+}
+.p5 {
+  position: relative;
+  left: 150px;
+  bottom: 79px;
+  font-size: 20px;
+}
+.p6 {
+  position: relative;
+  left: 137px;
+  bottom: 100px;
+}
+.p7 {
+  position: relative;
+  left: 268px;
+  bottom: 160px;
+  font-size: 20px;
+}
+.p8 {
+  position: relative;
+  left: 255px;
+  bottom: 180px;
+}
+.arr {
+  position: relative;
+  bottom: 810px;
   left: 520px;
-  bottom: 20px;
 }
-p2 {
-  position: relative;
-  left: 620px;
-  bottom: 15px;
-}
-h2 {
-  text-align: justify;
-}
-p.ss {
-  position: relative;
-  bottom: 20px;
-  left: 45px;
-  font-size: 17px;
-}
-p3 {
-  position: relative;
-  bottom: 20px;
-  left: 45px;
-  font-size: 17px;
-}
-p4 {
-  position: relative;
-  bottom: 20px;
-  left: 45px;
-  font-size: 17px;
-}
-p5 {
-  position: relative;
 
-  left: 45px;
-  font-size: 17px;
-}
-p6 {
+.dot > img {
   position: relative;
-  bottom: 7px;
-  left: 45px;
-  font-size: 17px;
+  bottom: 840px;
+  left: 840px;
+  height: 19px;
 }
-p7 {
+footer {
   position: relative;
-  top: 7px;
-  left: 45px;
-  font-size: 17px;
+  top: 233px;
+  background-color: rgb(6, 180, 6);
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
-p8 {
+div.ex1 {
   position: relative;
-  top: 5px;
-  left: 45px;
-  font-size: 17px;
+  bottom: 560px;
+  left: 522px;
+  background-color: rgb(250, 248, 248);
+  width: 348px;
+  height: 400px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+}
+div.ex1::-webkit-scrollbar {
+  width: 0 !important;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
