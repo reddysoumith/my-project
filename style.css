@@ -1,9 +1,112 @@
-h1 {
-  text-align: center;
+.c1 {
+  position: relative;
+  left: 500px;
+  background-color: rgb(250, 248, 248);
+  width: 350px;
+
+  height: 800px;
+  margin: 20px;
+  box-shadow: 0px 0px 6px 0px lightgrey;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
+.container > img {
+  position: relative;
+  top: 10px;
+  left: 115px;
+  border-radius: 60%;
+  width: 100px;
+  border-width: 2px;
+  border-style: ridge;
+}
+h3 {
+  position: relative;
+  left: 110px;
+  font-family: "Muli", sans-serif;
+}
+.p1 {
+  position: relative;
+  left: 60px;
+  opacity: 0.5;
+  font-family: "Poppins", sans-serif;
+}
+.p2 {
+  position: relative;
+  left: 135px;
+  opacity: 0.5;
+  bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.p3 {
+  position: relative;
+  left: 60px;
+  font-size: 20px;
+}
+.p4 {
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.p5 {
+  position: relative;
+  left: 150px;
+  bottom: 79px;
+  font-size: 20px;
+}
+.p6 {
+  position: relative;
+  left: 137px;
+  bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+.p7 {
+  position: relative;
+  left: 268px;
+  bottom: 160px;
+  font-size: 20px;
+}
+.p8 {
+  position: relative;
+  left: 255px;
+  bottom: 180px;
+  font-family: "Poppins", sans-serif;
+}
+.arr > img {
+  position: relative;
+  bottom: 960px;
+  left: 2px;
+}
+
+.dot > img {
+  position: relative;
+  bottom: 990px;
+  left: 320px;
+  height: 19px;
+}
+footer {
+  position: relative;
+  bottom: 304px;
+  background-color: rgb(6, 180, 6);
+  padding: 6px;
+  width: 330px;
+  left: 3px;
+  text-align: center;
+  color: white;
+  font-family: "Muli", sans-serif;
+}
+div.ex1 {
+  position: relative;
+  bottom: 230px;
+  left: 3px;
+  right: 200px;
+  background-color: rgb(250, 248, 248);
+  width: 340px;
+  height: 207px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+}
+div.ex1::-webkit-scrollbar {
+  width: 0 !important;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
